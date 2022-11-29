@@ -3,8 +3,8 @@ import React, { Component } from "react"
 
 class Input extends Component{
   initialState = {
-    current: 0 ,
-    newprice: 0,
+    current: 0.0,
+    newprice: 0.0,
     percentage: 0,
   }
   state = this.initialState
@@ -18,7 +18,7 @@ class Input extends Component{
         </input>
 
 
-        
+
         <legend>Current Price</legend>
         <input type="number" onChange={this.handleChange} value={this.state.current} name="current">
         </input>
