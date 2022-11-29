@@ -9,7 +9,7 @@ class Directions extends Component{
         <strong>
           <em>
             <li>
-              Type in the top box the current price and the bottom box the new box and it will calculate the result when you click calculate.
+              Type in the top box the current price and the bottom box the new box and it will calculate the result when you click calculate.(Only whole numbers)
             </li>
           </em>
         </strong>
