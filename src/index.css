@@ -378,7 +378,7 @@ html {
 
 body {
   color: #404040;
-  background: white;
+  background: black;
   font-size: 1rem;
 }
 
@@ -423,6 +423,7 @@ input{
   border: 5px solid #404040;
   padding-inline: 50px;
   margin: 10px;
+  ali
 }
 
 h1:not(:first-child),
