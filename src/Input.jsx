@@ -36,11 +36,7 @@ class Input extends Component{
   }
 
   printResult = () =>{
-    if(this.state.percentage > 0){
-      return(<h1> The markup price percentage is {this.state.percentage}</h1>)
-    }else if(this.state.percentage < 0){
-      return(<h1> The markdown price percentage is {this.state.percentage}</h1>)
-    }
+    return(<h1>The rate is {this.state.percentage}</h1>)
   }
 
   handleChange = (event) =>{
