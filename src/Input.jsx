@@ -30,6 +30,7 @@ class Input extends Component{
         ></input>
 
         {this.printResult()}
+        <h1>The formula used to calculate the percentage is ((NewPrice-OldPrice)/OldPrice)x100</h1>
       </section>
     )
   }
