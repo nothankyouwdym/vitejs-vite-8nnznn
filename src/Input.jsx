@@ -36,7 +36,7 @@ class Input extends Component{
   }
 
   printResult = () =>{
-    return(<h1>The rate is {this.state.percentage}</h1>)
+    return(<h1>The rate is {this.state.percentage}%</h1>)
   }
 
   handleChange = (event) =>{
