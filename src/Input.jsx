@@ -3,7 +3,7 @@ import React, { Component } from "react"
 
 class Input extends Component{
   initialState = {
-    current: 0.0,
+    oldprice: 0.0,
     newprice: 0.0,
     percentage: 0,
   }
@@ -19,8 +19,8 @@ class Input extends Component{
 
 
 
-        <legend>Current Price</legend>
-        <input type="number" onChange={this.handleChange} value={this.state.current} name="current">
+        <legend>Old Price</legend>
+        <input type="number" onChange={this.handleChange} value={this.state.oldprice} name="oldprice">
         </input>
 
         <input
@@ -29,9 +29,17 @@ class Input extends Component{
           value={"Submit"}
         ></input>
 
-        <h1>{this.state.percentage}</h1>
+        {this.printResult()}
       </section>
     )
+  }
+
+  printResult = () =>{
+    if(this.state.percentage > 0){
+      return(<h1> The markup price percentage is {this.state.percentage}</h1>)
+    }else if(this.state.percentage < 0){
+      return(<h1> The markdown price percentage is {this.state.percentage}</h1>)
+    }
   }
 
   handleChange = (event) =>{
@@ -49,7 +57,7 @@ class Input extends Component{
   }
 
   doMath = () =>{
-    return((this.state.newprice*100)/this.state.current)
+    return(((this.state.newprice-this.state.oldprice)/this.state.oldprice)*100)
   }
 }
 
