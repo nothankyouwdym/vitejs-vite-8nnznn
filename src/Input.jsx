@@ -5,7 +5,7 @@ class Input extends Component{
   initialState = {
     oldprice: 0.0,
     newprice: 0.0,
-    percentage: 0,
+    percentage: 0.0,
   }
   state = this.initialState
   render(){
