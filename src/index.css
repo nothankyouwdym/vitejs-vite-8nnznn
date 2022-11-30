@@ -423,6 +423,7 @@ input{
   border: 5px solid #404040;
   padding-inline: 50px;
   margin: 10px;
+  color: #404040;
 }
 
 h1:not(:first-child),
