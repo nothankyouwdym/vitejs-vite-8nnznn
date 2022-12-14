@@ -3,9 +3,9 @@ import React, { Component } from "react"
 
 class Input extends Component{
   initialState = {
-    oldprice: 0.0,
-    newprice: 0.0,
-    percentage: 0.0,
+    oldprice: null,
+    newprice: null,
+    percentage: null,
   }
   state = this.initialState
   render(){
